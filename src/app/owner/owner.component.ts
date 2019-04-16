@@ -2,14 +2,13 @@ import { Component, OnInit } from '@angular/core';
 import { ContactService } from '../contact.service';
 
 @Component({
-  selector: 'app-contact-list',
-  templateUrl: './contact-list.component.html',
-  styleUrls: ['./contact-list.component.css']
+  selector: 'app-owner',
+  templateUrl: './owner.component.html',
+  styleUrls: ['./owner.component.css']
 })
-export class ContactListComponent implements OnInit {
+export class OwnerComponent implements OnInit {
 
   contacts: any[] = [];
-  
 
   constructor(private contactService: ContactService) { }
 
@@ -19,6 +18,5 @@ export class ContactListComponent implements OnInit {
 		this.contacts = data;
     })
   }
-
 
 }

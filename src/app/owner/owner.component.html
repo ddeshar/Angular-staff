@@ -1,0 +1,45 @@
+<div class="row">
+    <div class="col-md-12">
+        <div class="tile">
+            <div class="tile-title-w-btn">
+                <h3 class="title">All owner data</h3>
+                <p><a class="btn btn-primary icon-btn" [routerLink]="['/owner/create']"><i class="fa fa-plus"></i>Add new owner data	</a></p>
+              </div>
+        <div class="tile-body">
+
+        <table class="table table-hover table-bordered" id="sampleTable">
+          <thead>
+            <tr>
+              <th>ID</th>
+              <th>full name</th>
+              <th>email</th>
+              <th>tel</th>
+              <th>project</th>
+              <th>Room No</th>
+              <th>Sales</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+          <tr *ngFor="let contact of contacts" >
+            <td>{{ contact.id }}</td>
+            <td>{{ contact.name }}</td>
+            <td>{{ contact.email }}</td>
+            <td>{{ contact.tel }}</td>
+            <td>{{ contact.project }}</td>
+            <td>{{ contact.RoomNo }}</td>
+            <td>{{ contact.Sales }}</td>
+            <td>
+              <div class="btn-group">
+                <!-- <a class="btn btn-primary" [routerLink]="['/owner', contact.id]"><i class="fa fa-lg fa-eye"></i></a> -->
+                <a class="btn btn-primary" [routerLink]="['/owner/edit', contact.id]"><i class="fa fa-lg fa-edit"></i></a>
+                <a class="btn btn-danger" href="#"><i class="fa fa-lg fa-trash"></i></a>
+              </div>
+            </td>
+          </tr>
+        </tbody>
+        </table>
+      </div>
+    </div>
+    </div>
+  </div>

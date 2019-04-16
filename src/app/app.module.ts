@@ -7,15 +7,19 @@ import { HttpClientModule } from "@angular/common/http";
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { ContactListComponent } from './contact-list/contact-list.component';
-import { ContactDetailComponent } from './contact-detail/contact-detail.component';
-
-
+import { ProfileComponent } from './profile/profile.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+import { OwnerComponent } from './owner/owner.component';
+import { OwnerAddComponent } from './owner-add/owner-add.component';
+import { OwnerEditComponent } from './owner-edit/owner-edit.component';
 @NgModule({
   declarations: [
     AppComponent,
-    ContactListComponent,
-    ContactDetailComponent
+    ProfileComponent,
+    DashboardComponent,
+    OwnerComponent,
+    OwnerAddComponent,
+    OwnerEditComponent
   ],
   imports: [
     BrowserModule,

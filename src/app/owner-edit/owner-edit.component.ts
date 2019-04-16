@@ -3,12 +3,12 @@ import { ActivatedRoute } from '@angular/router';
 import { ContactService } from '../contact.service';
 
 @Component({
-  selector: 'app-contact-detail',
-  templateUrl: './contact-detail.component.html',
-  styleUrls: ['./contact-detail.component.css']
+  selector: 'app-owner-edit',
+  templateUrl: './owner-edit.component.html',
+  styleUrls: ['./owner-edit.component.css']
 })
-export class ContactDetailComponent implements OnInit {
-  
+export class OwnerEditComponent implements OnInit {
+
   contact: any;
   constructor(private contactService: ContactService, private route: ActivatedRoute) { }
 
